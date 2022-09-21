@@ -1,3 +1,18 @@
+Notes on my design:
+
+It creates simple LED animations based on a shift register. Different options can be selected with different switch settings.
+
+1) clock input
+2) feed NOT LED 1 back into the shift register -- this creates a pattern where every other LED is switched on
+3) feed 1 into the shift register if both the first two LEDs are off. This creates a pattern where every third LED is on
+4) feed 1 into the shift register if the first three LEDs are off. This creates a pattern where every fourth LED is on
+5) feed 1 into the shift register if all the LEDs are off. This creates a pattern of one light scanning across the LEDs
+6) set the direction of the shift register
+7) toggles fixed direction or alternating direction. If alternating direction is set, the direction of the shift register will flip if all the LEDs are off
+8) enable the clock divider
+
+
+
 ![](../../workflows/wokwi/badge.svg)
 
 Go to https://tinytapeout.com for instructions!
